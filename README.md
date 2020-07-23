@@ -1,34 +1,50 @@
-# Project Name
+# FOODELICIOUS
 
-> One paragraph statement about the project.
+> Foodelicious is a restaurant website designed using HTML,CSS and Javascript.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+The project follows the guideline of [the odin project](https://theodinproject.com/courses/javascript/lessons/restaurant-page) to build a restaurant using javascript for DOM manipulation and interaction. It uses javascript classes and modules. It uses webpack. It also uses Bootstrap for user interface design.
 
-## Built With
+It demostrates the use of javascript classes, modules and also demonstrates the use of webpack.
 
-- Major languages,
-- frameworks,
-- technologies used
+## Technology Used
+
+- HTML
+
+  - Semantic HTML
+
+- CSS
+
+  - CSS Flexbox
+
+- [Bootstrap framework](https://getbootstrap.com/)
+
+- Javascript
+
+- [Webpack](https://webpack.js.org/)
+
+- [stylint](https://stylelint.io/)
+
+- [NPM](https://www.npmjs.com/)
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Foodelicious]( https://adejam.github.io/foodelicious/index.html)
 
 ### Development (Running locally)
 
 - Clone the project
 
 ```bash
-git clone https://github.com/user/html-css-template.git
+git clone https://github.com/adejam/foodelicious.git
 
 ```
 
 - Install Dependencies
 
 ```bash
-npm run install
+npm install
 ```
 
 To run StyleLint by itself, you may run the lint task:
@@ -70,9 +86,11 @@ npm run html-validator
 
 ## 👤 Author
 
-- Github: [@author](https://github.com/author)
-- Twitter: [@author](https://twitter.com/author)
-- Linkedin: [@author](https://www.linkedin.com/in/author/)
+### Adeleye Jamiu
+
+- Github: [@adejam](http://github.com/adejam)
+- Twitter: [@adeleye_oj](https://twitter.com/Adeleye_oj)
+- LinkedIn: [@adeleye-jamiu](https://linkedin.com/in/adeleye-jamiu)
 
 ## 🤝 Contributing
 
@@ -86,9 +104,17 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration, resources/assets used
-- etc
+- [@bolah2009](http://github.com/bolah2009)
+
+- [The Odin ProJect](https://theodinproject.com/courses/javascript/lessons/restaurant-page)
+
+- [W3c](https://www.w3.org/)
+
+- [MDN](https://developer.mozilla.org/)
+
+- [w3schools](https://www.w3schools.com/)
+
+- [Bootstrap framework](https://getbootstrap.com/)
 
 ## 📝 License
 
