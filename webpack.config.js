@@ -1,19 +1,38 @@
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/index.js',
+  entry: {
+    main: './src/js/index.js',
+    styles: './src/css/index.css',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: '[name].bundle.js',
   },
   module: {
     rules: [
       {
+        test: '/.js$/',
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+      {
         test: /\.css$/,
         exclude: /(node_modules)/,
-        loader: 'style-loader!css-loader',
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
+    new FixStyleOnlyEntriesPlugin(),
+    new HtmlWebPackPlugin({
+      template: './src/views/index.html',
+      filename: './index.html',
+    }),
+  ],
 };

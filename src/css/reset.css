@@ -164,3 +164,7 @@ a:hover {
 .bb_block {
   border-bottom: 2px solid rgba(0, 0, 0, 0.125);
 }
+
+.c_pink {
+  color: pink;
+}
