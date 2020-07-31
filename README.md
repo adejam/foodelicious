@@ -77,6 +77,12 @@ You can also check against HTML Validator:
 npm run html-validator
 ```
 
+You can also build with webpack:
+
+```bash
+npm run build
+```
+
 ## Style Guides
 
 - [CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
