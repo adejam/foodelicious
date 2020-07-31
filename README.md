@@ -4,9 +4,9 @@
 
 ![screenshot](./app_screenshot.png)
 
-The project follows the guideline of [the odin project](https://theodinproject.com/courses/javascript/lessons/restaurant-page) to build a restaurant using javascript for DOM manipulation and interaction. It uses javascript classes and modules. It uses webpack. It also uses Bootstrap for user interface design.
+The project follows the guideline of [the odin project](https://theodinproject.com/courses/javascript/lessons/restaurant-page) to build a restaurant page using javascript for DOM manipulation and interaction. It uses javascript classes and modules. It uses webpack. It also uses Bootstrap for user interface design.
 
-It demostrates the use of javascript classes, modules and also demonstrates the use of webpack.
+It demonstrates the use of javascript classes, modules and also demonstrates the use of webpack.
 
 ## Technology Used
 
