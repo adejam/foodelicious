@@ -129,8 +129,20 @@ a:hover {
   border: none;
 }
 
-.bg_White {
+.bg_white {
   background-color: #fff;
+}
+
+.bbg {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.no_p {
+  padding: 0;
+}
+
+.no_m {
+  margin: 0;
 }
 
 .p_10 {
@@ -167,4 +179,61 @@ a:hover {
 
 .c_pink {
   color: pink;
+}
+
+.tt_upper {
+  text-transform: uppercase;
+}
+
+.tt_cap {
+  text-transform: capitalize;
+}
+
+.br_200 {
+  border-radius: 200px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.o_h {
+  overflow: hidden;
+}
+
+.w_full {
+  width: 100%;
+}
+
+.l_0 {
+  left: 0;
+}
+
+.b_0 {
+  bottom: 0;
+}
+
+.r_0 {
+  right: 0;
+}
+
+.t_0 {
+  top: 0;
+}
+
+.td_none {
+  text-decoration: none;
+}
+
+.font_12 {
+  font-size: 12px;
+}
+
+.pos_rel {
+  position: relative;
+}
+
+.pos_abs {
+  position: absolute;
 }
