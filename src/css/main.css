@@ -1,28 +1,33 @@
-.content {
-  min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../assets/images/res5.jpg) center/cover no-repeat fixed;
-  margin-top: auto;
-  position: relative;
-}
-
 .collapse_button {
-  border: 1px solid pink;
+  border: 1px solid #ffc0cb;
 }
 
 .navbar-collapse {
   flex-grow: 0;
 }
 
+.nav-link,
+.footerSection {
+  color: #aaa;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
 .title {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
-  width: 100%;
-  z-index: 2;
-  padding: 250px 0;
-  font-size: 50px;
+  position: relative;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../assets/images/food14.jpg) center/cover no-repeat;
+  height: 90vh;
+  padding-left: 8%;
+}
+
+.quote_div_h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .pulsate {
@@ -45,35 +50,18 @@
   }
 }
 
-.category {
-  padding: 15px;
-}
-
-.categoryIcon svg {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-}
-
-.categoryIcon svg path {
-  fill: #ffc107;
-}
-
-.categoryIcon:hover,
-.cat_title:hover {
-  transition: transform 2s ease, color 2s ease;
-  transform: translateY(-10px);
-  color: #cd6100;
-  cursor: pointer;
-}
-
 .footerSection {
   padding: 50px 0;
+  background: #131313;
 }
 
 .footerAboutDiv,
 .jobsDiv {
   justify-content: center;
+}
+
+.socialSec {
+  background: #000;
 }
 
 .socialIcons a {
@@ -83,15 +71,16 @@
   width: 40px;
   height: 40px;
   border-radius: 5px;
+}
+
+.socialIcons a,
+.aboutIcon:hover,
+.about_title:hover {
   transition: transform 2s ease, color 2s ease;
 }
 
 .socialIcons a:hover {
   transform: translateY(-15px);
-}
-
-.dish {
-  background: linear-gradient(rgba(205, 96, 0, 0.7), rgba(205, 96, 0, 0.7)), url(../assets/images/res5.jpg) center/cover no-repeat fixed;
 }
 
 .foodSection {
@@ -104,7 +93,6 @@
 }
 
 .foodCard {
-  background: linear-gradient(rgba(205, 96, 0, 0.7), rgba(205, 96, 0, 0.7));
   margin: 20px 0;
   padding: 3px;
   border-radius: 16px;
@@ -112,18 +100,33 @@
   box-shadow: 2px 3px 1px 1px #cd6100;
 }
 
+.foodCard,
 .foodImg {
-  width: 100%;
-  min-height: 100%;
   transition: transform 3s;
+}
+
+.menuCard {
+  padding: 0;
+}
+
+.ourMenuSection .card {
+  border-radius: 0;
+}
+
+.foodImg {
+  min-height: 100%;
+}
+
+.foodImgText,
+.imgFooter,
+.bg_address {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .foodImgText {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 3s;
 }
 
 .foodImgText,
@@ -133,21 +136,18 @@
 }
 
 .imgFooter {
-  font-size: 30px;
+  font-size: 20px;
 }
 
-.cardFooterIcon svg {
-  width: 30px;
-  height: 30px;
-}
-
-.foodCard:hover img {
+.foodCard:hover .foodImg {
   opacity: 0.4;
   transform: scale(1.3);
 }
 
 .foodCard:hover .foodImgText,
-.foodCard:hover .imgFooter {
+.foodCard:hover .imgFooter,
+.menuCard:hover .foodImgText,
+.menuCard:hover .imgFooter {
   opacity: 1;
 }
 
@@ -158,8 +158,70 @@
 }
 
 .foodBtn:hover {
-  color: #ffc107;
-  background: #fff;
+  color: #fff;
+  background: #ffc107;
   border: #000;
   outline: none;
+}
+
+.menu_image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../assets/images/res5.jpg) center/cover no-repeat;
+  display: flex;
+}
+
+.menu_image,
+.menu_text {
+  min-height: 50vh;
+  align-items: center;
+}
+
+.bg_address {
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.menu_text {
+  padding: 40px 0;
+}
+
+.menu_text_div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu_p {
+  margin: 20px 0;
+  line-height: 2;
+}
+
+.menu_a {
+  padding: 13px 20px;
+  font-weight: bold;
+  background: rgb(10, 10, 10);
+  border: 2px solid #000;
+}
+
+.menu_a:hover {
+  color: #ffc107;
+  background: #fff;
+  border: none;
+}
+
+.about {
+  padding: 15px;
+}
+
+.aboutIcon svg {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.aboutIcon:hover,
+.about_title:hover {
+  transform: translateY(-10px);
+  color: #cd6100;
 }

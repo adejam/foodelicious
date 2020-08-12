@@ -1,7 +1,13 @@
-.socialC {
+.socialC,
+.contactD {
   order: 0;
 }
 
-.socialIcons {
+.socialIcons,
+.mapDiv {
   order: 1;
+}
+
+.map {
+  height: 100%;
 }
