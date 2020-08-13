@@ -41,16 +41,16 @@ class Header {
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav nav-tabs navbarNav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#" id="home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#" id="about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="#" id="menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#" id="contact">Contact</a>
               </li>
             </ul>
           </div>
