@@ -1,6 +1,7 @@
 import Header from './header';
 // import Home from './homepage';
-import About from './about';
+// import About from './about';
+import Menu from './menu';
 import Footer from './footer';
 
 const frag = document.createDocumentFragment();
@@ -13,7 +14,7 @@ function main(section) {
 }
 
 frag.appendChild(Header.headerFunc());
-frag.appendChild(main(About.aboutFunc()));
+frag.appendChild(main(Menu.menuFunc()));
 frag.appendChild(Footer.footerFunc());
 
 const content = document.querySelector('#content');
