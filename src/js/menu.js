@@ -1,8 +1,9 @@
 class Menu {
   static menuFunc() {
-    const menuSection = document.createElement('div');
+    const menuSection = document.createElement('section');
+    menuSection.className = 'section ourMenuSection mb_10';
+    menuSection.id = 'menu';
     menuSection.innerHTML = `
-        <section id="ourMenuSection" class="ourMenuSection mb_10">
           <h3 class="ta_center">Our Menu</h3>
           <div class="row foodContainer">
             <h4 class="col-12 p_10 text-warning">Healthy Foods</h4>
@@ -286,8 +287,9 @@ class Menu {
               </div>
             </article>
           </div>
-        </section>
+
        `;
+    // </section>
     return menuSection;
   }
 }

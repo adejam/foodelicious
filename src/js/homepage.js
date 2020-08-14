@@ -1,6 +1,8 @@
 class Home {
   static homeFunc() {
     const homeSection = document.createElement('div');
+    homeSection.className = 'section';
+    homeSection.id = 'home';
     homeSection.innerHTML = `
            <section class="title d_flex justify-content-center align-items-center c_pw">
           <div class="quote_div">

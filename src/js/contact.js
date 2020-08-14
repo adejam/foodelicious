@@ -1,8 +1,10 @@
 class Contact {
   static contactFunc() {
-    const contactSection = document.createElement('div');
+    const contactSection = document.createElement('section');
+    contactSection.className = 'section contactSection m_10';
+    contactSection.id = 'contact';
     contactSection.innerHTML = `
-         <section class="contactSection m_10">
+
           <div class="contactDiv row justify-content-center">
             <div class="col-md-6 col-sm-6 bg-light mapDiv  d_flex align-items-center p_10">
               <iframe
@@ -115,8 +117,9 @@ class Contact {
               </form>
             </div>
           </div>
-        </section>
+
        `;
+    // </section>
     return contactSection;
   }
 }

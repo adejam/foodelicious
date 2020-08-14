@@ -1,8 +1,10 @@
 class About {
   static aboutFunc() {
-    const aboutSection = document.createElement('div');
+    const aboutSection = document.createElement('section');
+    aboutSection.className = 'section bg_white mt_10';
+    aboutSection.id = 'about';
     aboutSection.innerHTML = `
-           <section id="aboutSection" class="bg_white mt_10">
+
           <header class="about">
             <h2 class="tt_cap ta_center">About Us</h2>
             <p>
@@ -144,8 +146,9 @@ class About {
               </div>
             </article>
           </div>
-        </section>
+
        `;
+    // </section>
     return aboutSection;
   }
 }
