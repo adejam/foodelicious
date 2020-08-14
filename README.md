@@ -30,7 +30,7 @@ It demostrates the use of javascript classes, modules and also demonstrates the 
 
 ## Live Demo
 
-[Foodelicious](https://adejam.github.io/foodelicious/index.html)
+[Foodelicious](https://deploy-preview-2--foodelicious.netlify.app/)
 
 ### Development (Running locally)
 
