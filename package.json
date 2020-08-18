@@ -39,6 +39,7 @@
     "stylelint:check": "npx stylelint **/*.css",
     "eslint": "npx eslint . --fix",
     "eslint:check": "npx eslint .",
-    "build": "npx webpack"
+    "build": "npx webpack",
+    "build": "npx webpack --mode production"
   }
 }
