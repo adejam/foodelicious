@@ -287,9 +287,7 @@ class Menu {
               </div>
             </article>
           </div>
-
        `;
-    // </section>
     return menuSection;
   }
 }

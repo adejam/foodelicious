@@ -146,9 +146,7 @@ class About {
               </div>
             </article>
           </div>
-
        `;
-    // </section>
     return aboutSection;
   }
 }

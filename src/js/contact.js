@@ -117,9 +117,7 @@ class Contact {
               </form>
             </div>
           </div>
-
        `;
-    // </section>
     return contactSection;
   }
 }

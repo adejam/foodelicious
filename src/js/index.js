@@ -40,15 +40,15 @@ function switched(newChild, target) {
 
 function switchTab(e) {
   if (e.target.classList.contains('aLink')) {
-    if (e.target.dataset.target === 'home') {
-      switched(Home.homeFunc(), e.target.dataset.target);
-    } else if (e.target.dataset.target === 'menu') {
-      switched(Menu.menuFunc(), e.target.dataset.target);
-    } else if (e.target.dataset.target === 'about') {
-      switched(About.aboutFunc(), e.target.dataset.target);
-    } else if (e.target.dataset.target === 'contact') {
-      switched(Contact.contactFunc(), e.target.dataset.target);
-    }
+    const tabObject = {
+      home: Home.homeFunc(),
+      menu: Menu.menuFunc(),
+      about: About.aboutFunc(),
+      contact: Contact.contactFunc(),
+    };
+    const currentTarget = e.target.dataset.target;
+    const newChild = tabObject[currentTarget];
+    switched(newChild, currentTarget);
   }
 }
 
