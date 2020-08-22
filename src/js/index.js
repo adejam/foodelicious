@@ -23,20 +23,21 @@ content.appendChild(frag);
 const linksUl = document.querySelector('.tabUl');
 const links = document.querySelectorAll('.aLink');
 
-function switched(newChild, target) {
+const switched = (newChild, currentTarget) => {
   const dex = document.querySelector('#main');
   dex.removeChild(dex.childNodes[0]);
   dex.appendChild(newChild);
   for (let i = 0; i < links.length; i += 1) {
-    if (target === links[i].dataset.target) {
-      links[i].classList.add('active');
-    } else {
-      links[i].classList.remove('active');
-    }
+    const {
+      classList,
+      dataset: { target },
+    } = links[i];
+    /* eslint no-unused-expressions: ["error", { "allowTernary": true }] */
+    currentTarget === target ? classList.add('active') : classList.remove('active');
   }
-}
+};
 
-function switchTab(e) {
+const switchTab = e => {
   if (e.target.classList.contains('aLink')) {
     const tabObject = {
       home: Home.homeFunc(),
@@ -48,6 +49,6 @@ function switchTab(e) {
     const newChild = tabObject[currentTarget];
     switched(newChild, currentTarget);
   }
-}
+};
 
 linksUl.addEventListener('click', switchTab);

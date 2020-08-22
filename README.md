@@ -22,6 +22,14 @@ It demonstrates the use of javascript classes, modules and also demonstrates the
 
 - Javascript
 
+  - Classes
+  - DOM manipulation APIs (i.e: `querySelector()`, `createElement()`, `event Listeners` and more);
+  - Arrow function.
+  - Destructuring assignment.
+  - Object literal
+  - Template literal
+  - Ternary Operators and more ES6 based syntax.
+
 - [Webpack](https://webpack.js.org/)
 
 - [stylint](https://stylelint.io/)
