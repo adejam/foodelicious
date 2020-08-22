@@ -1,0 +1,22 @@
+.footerAboutDivP,
+.jobsDivP {
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu_text {
+  flex: 0 0 30%;
+}
+
+.menu_image {
+  flex: 0 0 70%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+}
+
+.bg_address {
+  margin-left: 12%;
+  margin-right: 0;
+}

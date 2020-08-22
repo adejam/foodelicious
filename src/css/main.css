@@ -1,0 +1,227 @@
+.collapse_button {
+  border: 1px solid #ffc0cb;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link,
+.footerSection {
+  color: #aaa;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.title {
+  flex-direction: column;
+  position: relative;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../assets/images/food14.jpg) center/cover no-repeat;
+  height: 90vh;
+  padding-left: 8%;
+}
+
+.quote_div_h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.pulsate {
+  animation: pulsate 3s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.footerSection {
+  padding: 50px 0;
+  background: #131313;
+}
+
+.footerAboutDiv,
+.jobsDiv {
+  justify-content: center;
+}
+
+.socialSec {
+  background: #000;
+}
+
+.socialIcons a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2.5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.socialIcons a,
+.aboutIcon:hover,
+.about_title:hover {
+  transition: transform 2s ease, color 2s ease;
+}
+
+.socialIcons a:hover {
+  transform: translateY(-15px);
+}
+
+.foodSection {
+  padding: 20px;
+}
+
+.foodContainer {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.foodCard {
+  margin: 20px 0;
+  padding: 3px;
+  border-radius: 16px;
+  border: 1px solid #ffc107;
+  box-shadow: 2px 3px 1px 1px #cd6100;
+}
+
+.foodCard,
+.foodImg {
+  transition: transform 3s;
+}
+
+.menuCard {
+  padding: 0;
+}
+
+.ourMenuSection .card {
+  border-radius: 0;
+}
+
+.foodImg {
+  min-height: 100%;
+}
+
+.foodImgText,
+.imgFooter,
+.bg_address {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.foodImgText {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foodImgText,
+.imgFooter {
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.imgFooter {
+  font-size: 20px;
+}
+
+.foodCard:hover .foodImg {
+  opacity: 0.4;
+  transform: scale(1.3);
+}
+
+.foodCard:hover .foodImgText,
+.foodCard:hover .imgFooter,
+.menuCard:hover .foodImgText,
+.menuCard:hover .imgFooter {
+  opacity: 1;
+}
+
+.foodBtn {
+  border-radius: 180px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.foodBtn:hover {
+  color: #fff;
+  background: #ffc107;
+  border: #000;
+  outline: none;
+}
+
+.menu_image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../assets/images/res5.jpg) center/cover no-repeat;
+  display: flex;
+}
+
+.menu_image,
+.menu_text {
+  min-height: 50vh;
+  align-items: center;
+}
+
+.bg_address {
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.menu_text {
+  padding: 40px 0;
+}
+
+.menu_text_div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu_p {
+  margin: 20px 0;
+  line-height: 2;
+}
+
+.menu_a {
+  padding: 13px 20px;
+  font-weight: bold;
+  background: rgb(10, 10, 10);
+  border: 2px solid #000;
+}
+
+.menu_a:hover {
+  color: #ffc107;
+  background: #fff;
+  border: none;
+}
+
+.about {
+  padding: 15px;
+}
+
+.aboutIcon svg {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.aboutIcon:hover,
+.about_title:hover {
+  transform: translateY(-10px);
+  color: #cd6100;
+}
