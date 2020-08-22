@@ -10,7 +10,7 @@ const frag = document.createDocumentFragment();
 const mainSection = document.createElement('main');
 mainSection.className = 'main';
 mainSection.id = 'main';
-const main = section =>  mainSection.appendChild(section);
+const main = section => mainSection.appendChild(section);
 main(Home.homeFunc());
 frag.appendChild(Header.headerFunc());
 frag.appendChild(mainSection);
